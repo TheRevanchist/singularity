@@ -43,7 +43,6 @@ RUN pip install -U numpy
 RUN git clone https://github.com/pdollar/coco.git
 WORKDIR /root/coco/PythonAPI
 RUN make
-WORKDIR /root
 
 # Add CUDA to the path
 ENV LD_LIBRARY_PATH $LD_LIBRARY_PATH:/usr/local/cuda/lib64
