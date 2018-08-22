@@ -6,16 +6,11 @@ Maintainer Ismail Elezi
 
 %help
 This container runs Tensorflow-GPU.
-
-%environment
-    # nvidia driver libs specific cuda version libs are mounted by --bind command at run
-    # required for GPU enabled container
-    SHELL=/bin/bash
-    CPATH="/cuda/include:$CPATH"
-    PATH="/cuda/bin:/nvidia:$PATH"
-    LD_LIBRARY_PATH="/cuda/lib64:/nvidia:$LD_LIBRARY_PATH"
-    CUDA_HOME="/cuda"
-    export PATH LD_LIBRARY_PATH CPATH CUDA_HOME
+    
+# Add CUDA to the path
+ENV LD_LIBRARY_PATH $LD_LIBRARY_PATH:/usr/local/cuda/lib64
+ENV CUDA_HOME /usr/local/cuda
+    
 
 %post
     # default mount points
