@@ -3,6 +3,8 @@
 # Dockerfile to hold dependencies for the Tensorflow implmentation
 # of Faster RCNN
 
+Bootstrap: docker
+
 FROM nvidia/cuda:8.0-cudnn6-devel
 WORKDIR /root
 
