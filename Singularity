@@ -27,7 +27,7 @@ This container runs Tensorflow-GPU.
 
     # Install necessary packages
     apt-get update && apt-get install -y --no-install-recommends \
-        vim
+        vim \
         build-essential \
         gcc-multilib \
         libatlas-base-dev \
