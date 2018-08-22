@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: ubuntu:16.04
+From: nvidia/cuda:8.0-cudnn6-devel
 
 %labels
 Maintainer Ismail Elezi
