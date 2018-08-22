@@ -5,7 +5,7 @@
 
 Bootstrap: docker
 
-FROM nvidia/cuda:8.0-cudnn6-devel
+From: nvidia/cuda:8.0-cudnn6-devel
 WORKDIR /root
 
 # Get required packages
