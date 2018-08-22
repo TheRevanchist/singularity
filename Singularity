@@ -10,6 +10,8 @@ This container runs Tensorflow-GPU.
 # Add CUDA to the path
 ENV LD_LIBRARY_PATH $LD_LIBRARY_PATH:/usr/local/cuda/lib64
 ENV CUDA_HOME /usr/local/cuda
+
+WORKDIR /root
     
 
 %post
