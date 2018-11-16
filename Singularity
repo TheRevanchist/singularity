@@ -24,6 +24,7 @@ WORKDIR /root
 
     # Install necessary packages
     apt-get update && apt-get install -y --no-install-recommends \
+        tmux \
         vim \
         build-essential \
         gcc-multilib \
