@@ -61,14 +61,14 @@ WORKDIR /root
     pip3 install --no-cache-dir --upgrade pip==9.0.3
 
     # Install TensorFlow-GPU
-    export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.4.1-cp27-none-linux_x86_64.whl
+    export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.12.0-cp27-none-linux_x86_64.whl
     pip install --no-cache-dir --ignore-installed --upgrade $TF_BINARY_URL
 
     # Install python packages
     pip install --upgrade keras tflearn numpy nibabel h5py scikit-learn pandas scipy matplotlib ipykernel jupyter image PyYAML pillow easydict
 
     # Install TensorFlow-GPU
-    export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.4.1-cp35-cp35m-linux_x86_64.whl
+    export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.12.0-cp35-cp35m-linux_x86_64.whl
     pip3 install --no-cache-dir --ignore-installed --upgrade $TF_BINARY_URL
 
     # Install python packages
