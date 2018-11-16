@@ -73,3 +73,6 @@ WORKDIR /root
 
     # Install python packages
     pip3 install --upgrade keras tflearn numpy nibabel h5py scikit-learn pandas scipy matplotlib ipykernel jupyter
+    
+    pip install absl-py
+    pip3 install absl-py
